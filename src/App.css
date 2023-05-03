@@ -1,38 +1,78 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background: linear-gradient(
+    66.64deg,
+    #0a0d2c 6.6%,
+    #061039 32.71%,
+    #030d31 61.2%,
+    #05113d 82.73%,
+    #051240 97.46%
+  );
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header_contents {
+  height: 839px;
+  position: relative;
+}
+
+.box_bg_shape {
+  position: absolute;
+  top: 0;
+}
+.box_bg_shape img {
+  width: 100%;
+}
+
+.bg-shape {
+  max-width: 1440px;
+}
+.number_bg_shape {
+  position: absolute;
+}
+.number_bg_shape {
+  position: absolute;
+  left: 0;
+  top: 326px;
+}
+
+.technology_bg_shape {
+  position: absolute;
+  top: 164px;
+  bottom: 0;
+  right: 0;
+}
+
+.banner_title {
+  font-family: "Inter";
   text-align: center;
+  max-width: 998px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 98px;
+  z-index: 3;
+  margin: 0 auto;
+  font-feature-settings: "liga" off;
+
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner_title span {
+  background: linear-gradient(266.18deg, #57a1f7 22.66%, #a14af8 90.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .technology_bg_shape img {
+  width: 558px;
+}  */

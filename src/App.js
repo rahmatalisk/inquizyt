@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import number from "./assets/img/number-shape.png";
+import box from "./assets/img/box-shape.png";
+import technology from "./assets/img/technology-shape.png";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header>
+      <div className="container">
+        <div className="header_contents">
+          <h2 className="banner_title">
+            Optimize performance of your organization thanks to <br /> <span>Artificial Intelligence</span>
+          </h2>
+          <div className="bg_shape_wrapper">
+            <div className="box_bg_shape">
+              <img src={box} alt="" />
+            </div>
+            <div className="number_bg_shape">
+              <img src={number} alt="" />
+            </div>
+            <div className="technology_bg_shape">
+              <img src={technology} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-shape"></div>
+    </header>
   );
 }
 
